@@ -5,18 +5,22 @@
 #include<string>
 
 using namespace std;
-int countCharacter(string str);
+int countVowels(string str);
 int main()
 {
 	string str;
 	cout << "enter string:" << endl;
 	getline(cin, str);
-	int x = countCharacter(str);
-	cout << "number of characters = " << x << endl;
+	int x = countVowels(str);
+	cout << "number of vowels = " << x << endl;
 	return 0;
 }
-int countCharacter(string str)
+int countVowels(string str)
 {
-	int b = str.length();
-	return b;
+	int vowelCount = 0;
+	for (int i = 0; str[i] > i;i++)
+		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' 
+			|| str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+			vowelCount++;
+	return vowelCount;
 }
