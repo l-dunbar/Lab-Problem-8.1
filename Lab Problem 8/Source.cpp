@@ -15,6 +15,7 @@ int main()
 		if (str == "Q") break;
 		int x = countVowels(str);
 		cout << "number of vowels = " << x << endl;
+
 	}
 	return 0;
 }
